@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import ConfigureStore from './store/ConfigStore';
+import ConfigureStore from './store/ConfigStore.js';
 const ProviderComponent = () => {
   const store = ConfigureStore();
   return (
