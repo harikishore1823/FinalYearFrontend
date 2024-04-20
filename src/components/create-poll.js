@@ -335,7 +335,6 @@ function MainContent(props) {
             className="text-center font-weight-bold"
             style={{ fontSize: '1.3rem', color: 'purple' }}
           >
-            Built with <FontAwesomeIcon icon={faHeart} /> by...
           </p>
         </Link>
       </div>

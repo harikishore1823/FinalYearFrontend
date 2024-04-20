@@ -19,7 +19,7 @@ import ShowSearchMini from './user-settings/searchResultsMini';
 let socket;
 
 function UserInfo(props) {
-  const ENDPOINT = 'http://localhost:5000';
+  const ENDPOINT = 'https://finalyearbackend.onrender.com';
   const history = useHistory();
   var target = '';
   const [polls, setPolls] = useState([]);

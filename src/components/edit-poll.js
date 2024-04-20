@@ -23,7 +23,7 @@ import io from 'socket.io-client';
 let socket;
 
 function EditPoll(props) {
-  const ENDPOINT = 'http://localhost:5000';
+  const ENDPOINT = 'https://finalyearbackend.onrender.com';
   const history = useHistory();
   const [openVote, setOpenVote] = useState(true);
   const [pollid, setPollid] = useState('');

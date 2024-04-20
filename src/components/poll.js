@@ -18,7 +18,7 @@ import { ErrorOutline } from '@material-ui/icons/';
 let socket;
 
 function Poll(props) {
-  const ENDPOINT = 'http://localhost:5000';
+  const ENDPOINT = 'https://finalyearbackend.onrender.com';
   const history = useHistory();
   const [openVote, setOpenVote] = useState(true);
   const [username, setUsername] = useState(

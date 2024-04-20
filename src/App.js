@@ -14,7 +14,7 @@ import axios from 'axios';
 
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:5000';
+  axios.defaults.baseURL = 'https://finalyearbackend.onrender.com';
   return (
     <Router>
       <div className="App">

@@ -26,7 +26,7 @@ import io from 'socket.io-client';
 let socket;
 
 function PollResult(props) {
-  const ENDPOINT = 'http://localhost:5000';
+  const ENDPOINT = 'https://finalyearbackend.onrender.com';
   const history = useHistory();
   const [toggle, setToggle] = useState(false);
   const [voted, setVoted] = useState(false);
@@ -179,7 +179,7 @@ function PollResult(props) {
       <div className="d-flex flex-column align-items-center bg-white">
         <span className="font-weight-bold ">Scan QR Code</span>
         <QRCode
-          value={`http://localhost:5000/poll/${pollid}`}
+          value={`https://finalyearbackend.onrender.com/poll/${pollid}`}
           size={290}
           level={'H'}
           includeMargin={true}
@@ -438,7 +438,7 @@ function PollResult(props) {
                       </button>
                       <SocialShare
                         url={
-                          'http://localhost:5000/poll/' +
+                          'https://finalyearbackend.onrender.com/poll/' +
                           pollid
                         }
                         question={question}
@@ -465,7 +465,6 @@ function PollResult(props) {
           className="text-center font-weight-bold"
           style={{ fontSize: '1.3rem', color: 'purple' }}
         >
-          Built with <FontAwesomeIcon icon={faHeart} /> by...
         </p>
       </Link>
     </div>
